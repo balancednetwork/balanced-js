@@ -1,5 +1,5 @@
 {
-  "name": "@balancednetwork/BalancedJs",
+  "name": "@balancednetwork/balanced-js",
   "license": "MIT",
   "version": "1.0.0",
   "description": "🛠 An SDK for building applications on top of BalancedNetwork",
@@ -9,8 +9,8 @@
     "dist",
     "src"
   ],
-  "repository": "https://github.com/balancednetwork/BalancedJs.git",
-  "module": "dist/v1-sdk.esm.js",
+  "repository": "https://github.com/balancednetwork/balanced-js.git",
+  "module": "dist/balanced-js.esm.js",
   "scripts": {
     "lint": "tsdx lint src",
     "build": "tsdx build",
