@@ -19,7 +19,7 @@
     "prepublishOnly": "tsdx build"
   },
   "dependencies": {
-    "@ledgerhq/hw-app-icx": "./src/hw-app-icx/",
+    "@ledgerhq/hw-app-icx": "./hw-app-icx/",
     "bignumber.js": "9.0.1",
     "icon-sdk-js": "1.1.3",
     "lodash": "4.17.21"

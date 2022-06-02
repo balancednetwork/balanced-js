@@ -1192,7 +1192,7 @@
   resolved "https://registry.yarnpkg.com/@ledgerhq/errors/-/errors-4.78.0.tgz#23daf3af54d03b1bda3e616002b555da1bdb705a"
   integrity sha512-FX6zHZeiNtegBvXabK6M5dJ+8OV8kQGGaGtuXDeK/Ss5EmG4Ltxc6Lnhe8hiHpm9pCHtktOsnUVL7IFBdHhYUg==
 
-"@ledgerhq/hw-app-icx@./src/hw-app-icx/":
+"@ledgerhq/hw-app-icx@./hw-app-icx/":
   version "0.1.0"
   dependencies:
     "@ledgerhq/hw-transport" "^4.13.0"
