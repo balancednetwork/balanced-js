@@ -239,4 +239,15 @@ export default class Dex extends Contract {
 
     return this.call(callParams);
   }
+
+  totalDexAddresses(id: number) {
+    const callParams = this.paramsBuilder({
+      method: 'totalDexAddresses',
+      params: {
+        _id: IconConverter.toHex(id),
+      },
+    });
+
+    return this.call(callParams);
+  }
 }

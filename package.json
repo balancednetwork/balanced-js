@@ -1,7 +1,7 @@
 {
   "name": "@balancednetwork/balanced-js",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "🛠 An SDK for building applications on top of BalancedNetwork",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -36,6 +36,7 @@
   "prettier": {
     "printWidth": 120,
     "semi": true,
-    "singleQuote": true
+    "singleQuote": true,
+    "trailingComma" : "all"
   }
 }
