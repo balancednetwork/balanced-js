@@ -1,6 +1,6 @@
 import BigNumber from 'bignumber.js';
 import { Converter as IconConverter } from 'icon-sdk-js';
-import { isEmpty } from 'lodash';
+import { isEmpty } from 'lodash-es';
 
 import { SupportedChainId as NetworkId, SupportedChainId, ALL_SUPPORTED_CHAIN_IDS, CHAIN_INFO } from './chain';
 import Airdrip from './contracts/Airdrip';
@@ -16,17 +16,21 @@ import ICX from './contracts/ICX';
 import IRC2 from './contracts/IRC2';
 import LiquidationDisbursement from './contracts/LiquidationDisbursement';
 import Loans from './contracts/Loans';
-import Multicall from './contracts/Multicall';
+import Multicall, { CallData } from './contracts/Multicall';
 import Rebalancing from './contracts/Rebalancing';
 import Rewards from './contracts/Rewards';
 import Router from './contracts/Router';
 import sICX from './contracts/sICX';
 import Staking from './contracts/Staking';
-import ContractSettings, { LedgerSettings } from './contractSettings';
+import ContractSettings, { LedgerSettings, AccountType } from './contractSettings';
+
+export * from './contractSettings';
+export { default as addresses } from './addresses';
+
+export { CallData };
 
 export { SupportedChainId, ALL_SUPPORTED_CHAIN_IDS, CHAIN_INFO };
 
-export type AccountType = string | undefined | null;
 export type ResponseJsonRPCPayload = {
   id: number;
   jsonrpc: string;
@@ -82,8 +86,8 @@ export class BalancedJs {
       BALNsICX: 4,
       BALNbnUSD: 3,
       sICXbnUSD: 2,
-      sICXICX: 1,
-    },
+      sICXICX: 1
+    }
   };
 
   /**
@@ -139,7 +143,7 @@ export class BalancedJs {
     const contract = new Contract(this.contractSettings);
     contract.address = to;
     const payload = contract.transferICXParamsBuilder({
-      value: IconConverter.toHexNumber(value),
+      value: IconConverter.toHexNumber(value)
     });
 
     return contract.callICONPlugins(payload);

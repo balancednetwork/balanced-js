@@ -1,4 +1,4 @@
-import AppIcx from '@ledgerhq/hw-app-icx';
+import AppIcx from '@balancednetwork/hw-app-icx';
 import IconService from 'icon-sdk-js';
 
 import ContractSettings, { LedgerSettings } from './contractSettings';
@@ -23,7 +23,7 @@ export class Ledger {
 
     return {
       getProperties: () => rawTransaction,
-      getSignature: () => signedRawTxBase64,
+      getSignature: () => signedRawTxBase64
     };
   }
 }

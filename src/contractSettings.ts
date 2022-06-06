@@ -1,7 +1,8 @@
 import IconService from 'icon-sdk-js';
 
-import { AccountType, CHAIN_INFO } from '.';
-import { SupportedChainId as NetworkId } from './chain';
+import { SupportedChainId as NetworkId, CHAIN_INFO } from './chain';
+
+export type AccountType = string | undefined | null;
 
 export interface LedgerSettings {
   path?: string;
@@ -24,7 +25,7 @@ class ContractSettings {
   ledgerSettings: LedgerSettings = {
     path: LEDGER_BASE_PATH,
     transport: null,
-    actived: false,
+    actived: false
   };
 
   /**
