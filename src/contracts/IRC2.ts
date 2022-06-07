@@ -28,9 +28,10 @@ export default class IRC2 extends Contract {
     return this.call(callParams);
   }
 
-  balanceOf(owner: string) {
+  balanceOf(owner: string, blockHeight?: number) {
     const callParams = this.paramsBuilder({
       method: 'balanceOf',
+      blockHeight: blockHeight,
       params: {
         _owner: owner,
       },
