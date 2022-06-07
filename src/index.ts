@@ -23,6 +23,7 @@ import Router from './contracts/Router';
 import sICX from './contracts/sICX';
 import Staking from './contracts/Staking';
 import IISS from './contracts/IISS';
+import StabilityFund from 'contracts/StabilityFund';
 import ContractSettings, { LedgerSettings, AccountType } from './contractSettings';
 
 export * from './contractSettings';
@@ -70,6 +71,7 @@ export class BalancedJs {
   Multicall: Multicall;
   LiquidationDisbursement: LiquidationDisbursement;
   IISS: IISS;
+  StabilityFund: StabilityFund;
 
   static utils = {
     toLoop(value: BigNumber | number | string, currencyKey?: string): BigNumber {
@@ -131,6 +133,7 @@ export class BalancedJs {
     this.Multicall = new Multicall(this.contractSettings);
     this.LiquidationDisbursement = new LiquidationDisbursement(this.contractSettings);
     this.IISS = new IISS(this.contractSettings);
+    this.StabilityFund = new StabilityFund(this.contractSettings);
   }
 
   inject({ account, legerSettings }: SettingInjection) {
