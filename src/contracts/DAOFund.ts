@@ -7,6 +7,7 @@ export default class DAOFund extends Contract {
     super(contractSettings);
     this.address = addresses[this.nid].daofund;
   }
+
   getBalances() {
     const payload = this.paramsBuilder({
       method: 'getBalances',

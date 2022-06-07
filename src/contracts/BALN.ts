@@ -65,4 +65,12 @@ export default class BALN extends IRC2 {
 
     return this.call(callParams);
   }
+
+  totalStakedBalance() {
+    const callParams = this.paramsBuilder({
+      method: 'totalStakedBalance',
+    });
+
+    return this.call(callParams);
+  }
 }

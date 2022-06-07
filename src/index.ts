@@ -22,6 +22,7 @@ import Rewards from './contracts/Rewards';
 import Router from './contracts/Router';
 import sICX from './contracts/sICX';
 import Staking from './contracts/Staking';
+import IISS from './contracts/IISS';
 import ContractSettings, { LedgerSettings, AccountType } from './contractSettings';
 
 export * from './contractSettings';
@@ -68,6 +69,7 @@ export class BalancedJs {
   DAOFund: DAOFund;
   Multicall: Multicall;
   LiquidationDisbursement: LiquidationDisbursement;
+  IISS: IISS;
 
   static utils = {
     toLoop(value: BigNumber | number | string, currencyKey?: string): BigNumber {
@@ -86,8 +88,8 @@ export class BalancedJs {
       BALNsICX: 4,
       BALNbnUSD: 3,
       sICXbnUSD: 2,
-      sICXICX: 1
-    }
+      sICXICX: 1,
+    },
   };
 
   /**
@@ -128,6 +130,7 @@ export class BalancedJs {
     this.DAOFund = new DAOFund(this.contractSettings);
     this.Multicall = new Multicall(this.contractSettings);
     this.LiquidationDisbursement = new LiquidationDisbursement(this.contractSettings);
+    this.IISS = new IISS(this.contractSettings);
   }
 
   inject({ account, legerSettings }: SettingInjection) {
@@ -143,7 +146,7 @@ export class BalancedJs {
     const contract = new Contract(this.contractSettings);
     contract.address = to;
     const payload = contract.transferICXParamsBuilder({
-      value: IconConverter.toHexNumber(value)
+      value: IconConverter.toHexNumber(value),
     });
 
     return contract.callICONPlugins(payload);
