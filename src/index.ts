@@ -23,7 +23,7 @@ import Router from './contracts/Router';
 import sICX from './contracts/sICX';
 import Staking from './contracts/Staking';
 import IISS from './contracts/IISS';
-import StabilityFund from 'contracts/StabilityFund';
+import StabilityFund from './contracts/StabilityFund';
 import ContractSettings, { LedgerSettings, AccountType } from './contractSettings';
 
 export * from './contractSettings';
