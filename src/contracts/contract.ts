@@ -51,18 +51,18 @@ export class Contract {
 
   public paramsBuilder({
     method,
+    blockHeight,
     params
   }: {
     method: string;
+    blockHeight?: number;
     params?: {
       [key: string]: any;
     };
   }) {
-    return new IconBuilder.CallBuilder()
-      .to(this.address)
-      .method(method)
-      .params(params)
-      .build();
+    const rawTx = new IconBuilder.CallBuilder().to(this.address).method(method).params(params).build();
+    if (blockHeight) rawTx['height'] = IconConverter.toHex(blockHeight);
+    return rawTx;
   }
 
   call(params) {
