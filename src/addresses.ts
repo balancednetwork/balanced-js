@@ -20,6 +20,7 @@ const MAINNET_ADDRESSES = {
   multicall: 'cxa4aa9185e23558cff990f494c1fd2845f6cbf741',
   disbursement: 'cxe3905591929d17fc8496ae28ee3b9c144579228e',
   stabilityfund: 'cxa09dbb60dcb62fffbd232b6eae132d730a2aafa6',
+  stakedLp: '',
 };
 
 const YEOUIDO_ADDRESSES = {
@@ -42,6 +43,7 @@ const YEOUIDO_ADDRESSES = {
   multicall: '',
   disbursement: '',
   stabilityfund: '',
+  stakedLp: '',
 };
 
 const SEJONG_ADDRESSES = {
@@ -64,6 +66,7 @@ const SEJONG_ADDRESSES = {
   multicall: 'cx02510602b5f028ee418fc5a8ba893aa2dbb56ece',
   disbursement: '',
   stabilityfund: 'cx342c69da9d8ac099f10fc4eb226ae0de54d8097f',
+  stakedLp: 'cx0c3848f0fbb714fcb104e909e3fc1250b8cf9e7f',
 };
 
 const addresses = {
