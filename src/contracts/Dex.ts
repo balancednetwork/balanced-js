@@ -132,6 +132,24 @@ export default class Dex extends Contract {
     return this.callICONPlugins(payload);
   }
 
+  transfer(to: string, poolId: number, value: string, data?: string) {
+    const callParams = this.transactionParamsBuilder({
+      method: 'transfer',
+      params: {
+        _to: to,
+        _id: IconConverter.toHex(poolId),
+        _value: IconConverter.toHexNumber(value),
+        _data: data && IconConverter.toHex(data),
+      },
+    });
+
+    return this.callICONPlugins(callParams);
+  }
+
+  stake(poolId: number, value: string) {
+    return this.transfer(addresses[this.nid].stakedLp, poolId, value, JSON.stringify({ method: '_stake' }));
+  }
+
   getICXWithdrawLock() {
     const callParams = this.paramsBuilder({
       method: 'getICXWithdrawLock',
