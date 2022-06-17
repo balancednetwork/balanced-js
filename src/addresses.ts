@@ -86,9 +86,10 @@ const BERLIN_ADDRESSES = {
   bnusd: 'cx34bda1418b594a89df326402d62db191d421472d',
   baln: 'cx84eea4658b11b3538c5dd5bea51d9a3154852336',
   bwt: 'cx807d050f6d918b807bf719cb03b7a77c65e67c98',
-  stakedLp: 'cx17236b39bc3b22e397c1bb03a2bc52b1a584f3b0',
   multicall: 'cx993325d59b75fac3a936dfadee6b6e7637172443',
   disbursement: '',
+  stabilityfund: '',
+  stakedLp: 'cx17236b39bc3b22e397c1bb03a2bc52b1a584f3b0',
 };
 
 const addresses = {
