@@ -25,6 +25,7 @@ import Staking from './contracts/Staking';
 import IISS from './contracts/IISS';
 import StabilityFund from './contracts/StabilityFund';
 import ContractSettings, { LedgerSettings, AccountType } from './contractSettings';
+import StakedLP from './contracts/StakedLP';
 
 export * from './contractSettings';
 export { default as addresses } from './addresses';
@@ -72,6 +73,7 @@ export class BalancedJs {
   LiquidationDisbursement: LiquidationDisbursement;
   IISS: IISS;
   StabilityFund: StabilityFund;
+  StakedLP: StakedLP;
 
   static utils = {
     toLoop(value: BigNumber | number | string, currencyKey?: string): BigNumber {
@@ -134,6 +136,7 @@ export class BalancedJs {
     this.LiquidationDisbursement = new LiquidationDisbursement(this.contractSettings);
     this.IISS = new IISS(this.contractSettings);
     this.StabilityFund = new StabilityFund(this.contractSettings);
+    this.StakedLP = new StakedLP(this.contractSettings);
   }
 
   inject({ account, legerSettings }: SettingInjection) {
