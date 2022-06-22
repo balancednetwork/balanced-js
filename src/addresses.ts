@@ -79,7 +79,7 @@ const BERLIN_ADDRESSES = {
   dex: 'cx4d3b86709c387dec2927158c0377ecabe002f503',
   rebalancing: 'cx1d9b9f4892d15d84328b94f036916c7abff445b9',
   governance: 'cxf42e1bc5d514d988818c8d17a8a7597bebe4b025',
-  band: 'cxd9f4ee69b15ae0fbb8cd95b183f420ca54ef0e5c',
+  band: 'cx18f2bc4510f827b0aa9acfe5298d039271e0bb73',
   router: 'cx00fe628e3a1a8d59c0a5aacf476d96c9e4917f9a',
   airdrip: '',
   sicx: 'cxdd89d7a425b8f0b6448a8c80136727c517e64033',
