@@ -20,7 +20,7 @@ const MAINNET_ADDRESSES = {
   multicall: 'cxa4aa9185e23558cff990f494c1fd2845f6cbf741',
   disbursement: 'cxe3905591929d17fc8496ae28ee3b9c144579228e',
   stabilityfund: 'cxa09dbb60dcb62fffbd232b6eae132d730a2aafa6',
-  stakedLp: '',
+  stakedLp: 'cx8dc674ce709c518bf1a6058a2722a59f94b6fb7f',
 };
 
 const YEOUIDO_ADDRESSES = {
