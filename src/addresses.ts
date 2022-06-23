@@ -89,7 +89,7 @@ const BERLIN_ADDRESSES = {
   multicall: 'cx94a9a5750182d117a82a866e78ce7c75856c1edb',
   disbursement: '',
   stabilityfund: '',
-  stakedLp: '',
+  stakedLp: 'cx8ac7b22d1eea06bffb3786a7d4ce7c0c8ea9e525',
 };
 
 const addresses = {
