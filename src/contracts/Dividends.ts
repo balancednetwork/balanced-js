@@ -63,7 +63,7 @@ export default class Dividends extends Contract {
     const payload = this.paramsBuilder({
       method: 'getUnclaimedDividends',
       params: {
-        _account: account,
+        user: account,
       }
     });
 
