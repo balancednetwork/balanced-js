@@ -25,8 +25,8 @@ export const CHAIN_INFO: { readonly [chainId: number]: ChainInfo } = {
   [SupportedChainId.MAINNET]: {
     name: 'ICON Mainnet',
     node: 'https://ctz.solidwallet.io',
-    APIEndpoint: 'https://ctz.solidwallet.io/api/v3',
-    debugAPIEndpoint: 'https://ctz.solidwallet.io/api/debug/v3',
+    APIEndpoint: 'https://api.icon.community/api/v3',
+    debugAPIEndpoint: 'https://api.icon.community/api/v3d',
     chainId: 1,
     tracker: 'https://tracker.icon.foundation',
   },
