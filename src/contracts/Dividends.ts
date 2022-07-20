@@ -52,11 +52,11 @@ export default class Dividends extends Contract {
   }
 
   claimDividends() {
-    const payload = this.paramsBuilder({
+    const payload = this.transactionParamsBuilder({
       method: 'claimDividends',
     });
 
-    return this.call(payload);
+    return this.callICONPlugins(payload);
   }
 
   getUnclaimedDividends(account: string) {
