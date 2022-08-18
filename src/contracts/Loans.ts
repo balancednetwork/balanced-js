@@ -10,10 +10,24 @@ export default class Loans extends Contract {
     this.address = addresses[this.nid].loans;
   }
 
-  withdrawCollateral(value: string) {
+  withdrawCollateral(value: string, collateralType?: string) {
     const payload = this.transactionParamsBuilder({
       method: 'withdrawCollateral',
-      params: { _value: IconConverter.toHexNumber(value) },
+      params: { 
+        _value: IconConverter.toHexNumber(value),
+        _collateralSymbol: collateralType || null,
+      },
+    });
+
+    return this.callICONPlugins(payload);
+  }
+
+  withdrawAndUnstake(value: string) {
+    const payload = this.transactionParamsBuilder({
+      method: 'withdrawAndUnstake',
+      params: { 
+        _value: IconConverter.toHexNumber(value),
+      },
     });
 
     return this.callICONPlugins(payload);
@@ -34,13 +48,26 @@ export default class Loans extends Contract {
     return this.callICONPlugins(payload);
   }
 
-  returnAsset(symbol: string, value: string, repay: number) {
+  borrow(amount: string, collateralType?: string, asset?: string) {
+    const payload = this.transactionParamsBuilder({
+      method: 'borrow',
+      params: {
+        _collateralToBorrowAgainst: collateralType || 'sICX',
+        _assetToBorrow: asset || 'bnUSD',
+        _amountToBorrow: IconConverter.toHexNumber(amount),
+      },
+    })
+
+    return this.callICONPlugins(payload);
+  }
+
+  returnAsset(symbol: string, value: string, collateralType?: string) {
     const payload = this.transactionParamsBuilder({
       method: 'returnAsset',
       params: {
         _symbol: symbol,
         _value: IconConverter.toHexNumber(value),
-        _repay: IconConverter.toHex(repay),
+        _collateralSymbol: collateralType || 'sICX',
       },
     });
 
@@ -77,6 +104,59 @@ export default class Loans extends Contract {
   getNonzeroPositionCount() {
     const callParams = this.paramsBuilder({
       method: 'getNonzeroPositionCount',
+    });
+
+    return this.call(callParams);
+  }
+
+  getCollateralTokens() {
+    const callParams = this.paramsBuilder({
+      method: 'getCollateralTokens',
+    });
+
+    return this.call(callParams);
+  }
+
+  getDebtCeiling(symbol: string) {
+    const callParams = this.paramsBuilder({
+      method: 'getDebtCeiling',
+      params: {
+        symbol: symbol,
+      },
+    });
+
+    return this.call(callParams);
+  }
+
+  getLiquidationRatio(symbol: string) {
+    const callParams = this.paramsBuilder({
+      method: 'getLiquidationRatio',
+      params: {
+        symbol: symbol,
+      },
+    });
+
+    return this.call(callParams);
+  }
+
+  getLockingRatio(symbol: string) {
+    const callParams = this.paramsBuilder({
+      method: 'getLockingRatio',
+      params: {
+        _symbol: symbol,
+      },
+    });
+
+    return this.call(callParams);
+  }
+
+  getTotalCollateralDebt(collateral: string, asset: string) {
+    const callParams = this.paramsBuilder({
+      method: 'getTotalCollateralDebt',
+      params: {
+        collateral: collateral,
+        assetSymbol: asset,
+      },
     });
 
     return this.call(callParams);

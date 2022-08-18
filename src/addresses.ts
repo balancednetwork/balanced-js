@@ -21,6 +21,7 @@ const MAINNET_ADDRESSES = {
   disbursement: 'cxe3905591929d17fc8496ae28ee3b9c144579228e',
   stabilityfund: 'cxa09dbb60dcb62fffbd232b6eae132d730a2aafa6',
   stakedLp: 'cx8dc674ce709c518bf1a6058a2722a59f94b6fb7f',
+  balancedOracle: 'cx133c6015bb29f692b12e71c1792fddf8f7014652',
 };
 
 const YEOUIDO_ADDRESSES = {
@@ -44,6 +45,7 @@ const YEOUIDO_ADDRESSES = {
   disbursement: '',
   stabilityfund: '',
   stakedLp: '',
+  balancedOracle: '',
 };
 
 const SEJONG_ADDRESSES = {
@@ -67,6 +69,7 @@ const SEJONG_ADDRESSES = {
   disbursement: '',
   stabilityfund: 'cx342c69da9d8ac099f10fc4eb226ae0de54d8097f',
   stakedLp: 'cx0c3848f0fbb714fcb104e909e3fc1250b8cf9e7f',
+  balancedOracle: '',
 };
 
 const BERLIN_ADDRESSES = {
@@ -90,6 +93,7 @@ const BERLIN_ADDRESSES = {
   disbursement: 'cxda35146882308a6bb26519738ffef85bb8d7535e',
   stabilityfund: 'cx0d086972db4f23274e80cf19583a76b778216ae4',
   stakedLp: 'cx225c4f25f27d75143a062f4f0928fb01ce642716s',
+  balancedOracle: 'cxd62ddc6a32a9a295f3ccdaf81eddb2bff2a9c141',
 };
 
 const addresses = {
