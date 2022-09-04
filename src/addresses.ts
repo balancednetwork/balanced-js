@@ -93,7 +93,7 @@ const BERLIN_ADDRESSES = {
   disbursement: 'cxda35146882308a6bb26519738ffef85bb8d7535e',
   stabilityfund: 'cx0d086972db4f23274e80cf19583a76b778216ae4',
   stakedLp: 'cx8ac7b22d1eea06bffb3786a7d4ce7c0c8ea9e525',
-  balancedOracle: 'cxd62ddc6a32a9a295f3ccdaf81eddb2bff2a9c141',
+  balancedOracle: 'cx5c244805b38c3f71d494cbcfd25f87c201d81629',
 };
 
 const addresses = {
