@@ -132,7 +132,7 @@ export default class Loans extends Contract {
     const callParams = this.paramsBuilder({
       method: 'getLiquidationRatio',
       params: {
-        symbol: symbol,
+        _symbol: symbol,
       },
     });
 
