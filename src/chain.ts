@@ -28,7 +28,7 @@ export const CHAIN_INFO: { readonly [chainId: number]: ChainInfo } = {
     APIEndpoint: 'https://api.icon.community/api/v3',
     debugAPIEndpoint: 'https://api.icon.community/api/v3d',
     chainId: 1,
-    tracker: 'https://tracker.icon.foundation',
+    tracker: 'https://tracker.icon.community',
   },
   [SupportedChainId.YEOUIDO]: {
     name: 'Yeouido',
@@ -44,7 +44,7 @@ export const CHAIN_INFO: { readonly [chainId: number]: ChainInfo } = {
     APIEndpoint: 'https://sejong.net.solidwallet.io/api/v3',
     debugAPIEndpoint: 'https://sejong.net.solidwallet.io/api/v3d',
     chainId: 83,
-    tracker: 'https://sejong.tracker.solidwallet.io',
+    tracker: 'https://tracker.sejong.icon.community',
   },
   [SupportedChainId.BERLIN]: {
     name: 'Berlin',
@@ -52,6 +52,6 @@ export const CHAIN_INFO: { readonly [chainId: number]: ChainInfo } = {
     APIEndpoint: 'https://berlin.net.solidwallet.io/api/v3',
     debugAPIEndpoint: 'https://berlin.net.solidwallet.io/api/v3d',
     chainId: 7,
-    tracker: 'https://berlin.tracker.solidwallet.io',
+    tracker: 'https://tracker.berlin.icon.community',
   },
 };
