@@ -161,4 +161,12 @@ export default class Loans extends Contract {
 
     return this.call(callParams);
   }
+
+  borrowerCount() {
+    const callParams = this.paramsBuilder({
+      method: 'borrowerCount',
+    });
+
+    return this.call(callParams);
+  }
 }
