@@ -58,4 +58,16 @@ export default class Rewards extends Contract {
 
     return this.call(payload);
   }
+  
+  getBoostData(address: string, sources?: string[]) {
+    const payload = this.paramsBuilder({
+      method: `getBoostData`,
+      params: {
+        user: address,
+        sources: sources
+      }
+    });
+
+    return this.call(payload);
+  }
 }

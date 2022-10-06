@@ -73,4 +73,44 @@ export default class BALN extends IRC2 {
 
     return this.call(callParams);
   }
+
+  createLock(to: string, value: string, unlockTime: number) {
+    const transferData = JSON.stringify({
+      method: "createLock",
+      params: {
+        unlockTime:unlockTime * 1000
+      }
+    })
+
+    const payload = this.transactionParamsBuilder({
+      method: 'transfer',
+      params: {
+        _to: to,
+        _value: IconConverter.toHexNumber(value),
+        _data: transferData && IconConverter.toHex(transferData),
+      },
+    });
+
+    return this.callICONPlugins(payload);
+  }
+
+  increaseAmount(to: string, value: string, unlockTime: number) {
+    const transferData = JSON.stringify({
+      method: "increaseAmount",
+      params: {
+        unlockTime: unlockTime * 1000
+      }
+    })
+    
+    const payload = this.transactionParamsBuilder({
+      method: 'transfer',
+      params: {
+        _to: to,
+        _value: IconConverter.toHexNumber(value),
+        _data: transferData && IconConverter.toHex(transferData),
+      },
+    });
+
+    return this.callICONPlugins(payload);
+  }
 }
