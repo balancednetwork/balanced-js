@@ -27,6 +27,7 @@ import StabilityFund from './contracts/StabilityFund';
 import ContractSettings, { LedgerSettings, AccountType } from './contractSettings';
 import StakedLP from './contracts/StakedLP';
 import BalancedOracle from './contracts/BalancedOracle';
+import BBALN from './contracts/BBALN';
 
 export * from './contractSettings';
 export { default as addresses } from './addresses';
@@ -76,6 +77,7 @@ export class BalancedJs {
   StabilityFund: StabilityFund;
   StakedLP: StakedLP;
   BalancedOracle: BalancedOracle;
+  BBALN: BBALN;
 
   static utils = {
     toLoop(value: BigNumber | number | string, currencyKey?: string): BigNumber {
@@ -140,6 +142,7 @@ export class BalancedJs {
     this.StabilityFund = new StabilityFund(this.contractSettings);
     this.StakedLP = new StakedLP(this.contractSettings);
     this.BalancedOracle = new BalancedOracle(this.contractSettings);
+    this.BBALN = new BBALN(this.contractSettings);
   }
 
   inject({ account, legerSettings }: SettingInjection) {
