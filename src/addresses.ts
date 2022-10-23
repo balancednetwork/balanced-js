@@ -23,6 +23,7 @@ const MAINNET_ADDRESSES = {
   stakedLp: 'cx8dc674ce709c518bf1a6058a2722a59f94b6fb7f',
   balancedOracle: 'cx133c6015bb29f692b12e71c1792fddf8f7014652',
   bbaln: '',
+  feeHandler: 'cx5faae53c4dbd1fbe4a2eb4aab6565030f10da5c6',
 };
 
 const YEOUIDO_ADDRESSES = {
@@ -48,6 +49,7 @@ const YEOUIDO_ADDRESSES = {
   stakedLp: '',
   balancedOracle: '',
   bbaln: '',
+  feeHandler: '',
 };
 
 const SEJONG_ADDRESSES = {
@@ -73,6 +75,7 @@ const SEJONG_ADDRESSES = {
   stakedLp: 'cx0c3848f0fbb714fcb104e909e3fc1250b8cf9e7f',
   balancedOracle: '',
   bbaln: '',
+  feeHandler: '',
 };
 
 const BERLIN_ADDRESSES = {
@@ -98,6 +101,7 @@ const BERLIN_ADDRESSES = {
   stakedLp: 'cx8ac7b22d1eea06bffb3786a7d4ce7c0c8ea9e525',
   balancedOracle: 'cx5c244805b38c3f71d494cbcfd25f87c201d81629',
   bbaln: 'cx63d5d4a710d83afa29fa15e528fb5379638e848f',
+  feeHandler: 'cx5dfdc2de98f028c1fc5bf8af5110ff5a7b0a6db6',
 };
 
 const addresses = {
