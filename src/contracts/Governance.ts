@@ -71,29 +71,38 @@ export default class Governance extends Contract {
     return this.call(callParams);
   }
 
-  myVotingWeight(address: string, _day: number) {
+  myVotingWeight(address: string, block: number) {
     const callParams = this.paramsBuilder({
       method: 'myVotingWeight',
       params: {
         _address: address,
-        _day: IconConverter.toHex(_day),
+        block: IconConverter.toHex(block),
       },
     });
 
     return this.call(callParams);
   }
 
-  defineVote(name: string, description: string, vote_start: number, snapshot: number, actions: string) {
+  defineVote(name: string, description: string, vote_start: number, duration: number, forumLink: string, actions: string) {
     const callParams = this.transactionParamsBuilder({
       method: 'defineVote',
       params: {
         name: name,
         description: description,
         vote_start: IconConverter.toHex(vote_start),
-        snapshot: IconConverter.toHex(snapshot),
+        duration: IconConverter.toHex(duration),
+        forumLink: forumLink,
         actions: actions,
       },
     });
     return this.callICONPlugins(callParams);
+  }
+
+  getBalnVoteDefinitionCriterion() {
+    const callParams = this.paramsBuilder({
+      method: 'getBalnVoteDefinitionCriterion',
+    })
+
+    return this.call(callParams);
   }
 }
