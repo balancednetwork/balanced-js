@@ -71,12 +71,12 @@ export default class Governance extends Contract {
     return this.call(callParams);
   }
 
-  myVotingWeight(address: string, _day: number) {
+  myVotingWeight(address: string, block: number) {
     const callParams = this.paramsBuilder({
       method: 'myVotingWeight',
       params: {
         _address: address,
-        _day: IconConverter.toHex(_day),
+        block: IconConverter.toHex(block),
       },
     });
 
