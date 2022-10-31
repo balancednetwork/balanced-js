@@ -22,7 +22,7 @@ const MAINNET_ADDRESSES = {
   stabilityfund: 'cxa09dbb60dcb62fffbd232b6eae132d730a2aafa6',
   stakedLp: 'cx8dc674ce709c518bf1a6058a2722a59f94b6fb7f',
   balancedOracle: 'cx133c6015bb29f692b12e71c1792fddf8f7014652',
-  bbaln: '',
+  bbaln: 'cxe0252e6c1fe4040412811d83d13979e335287e45',
   feeHandler: 'cx5faae53c4dbd1fbe4a2eb4aab6565030f10da5c6',
 };
 
