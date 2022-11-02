@@ -78,4 +78,12 @@ export default class BBALN extends Contract {
 
     return this.call(payload);
   }
+
+  activeUsersCount() {
+    const payload = this.paramsBuilder({
+      method: 'activeUsersCount',
+    });
+    
+    return this.call(payload);
+  }
 }
