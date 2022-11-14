@@ -3,6 +3,7 @@ export enum SupportedChainId {
   YEOUIDO = 3,
   SEJONG = 83,
   BERLIN = 7,
+  LISBON = 2,
 }
 
 export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
@@ -10,6 +11,7 @@ export const ALL_SUPPORTED_CHAIN_IDS: SupportedChainId[] = [
   SupportedChainId.YEOUIDO,
   SupportedChainId.SEJONG,
   SupportedChainId.BERLIN,
+  SupportedChainId.LISBON,
 ];
 
 interface ChainInfo {
@@ -53,5 +55,13 @@ export const CHAIN_INFO: { readonly [chainId: number]: ChainInfo } = {
     debugAPIEndpoint: 'https://berlin.net.solidwallet.io/api/v3d',
     chainId: 7,
     tracker: 'https://tracker.berlin.icon.community',
+  },
+  [SupportedChainId.LISBON]: {
+    name: 'LISBON',
+    node: 'https://lisbon.net.solidwallet.io',
+    APIEndpoint: 'https://lisbon.net.solidwallet.io/api/v3',
+    debugAPIEndpoint: 'https://lisbon.net.solidwallet.io/api/v3d',
+    chainId: 2,
+    tracker: 'https://tracker.lisbon.icon.community',
   },
 };
