@@ -114,7 +114,7 @@ const LISBON_ADDRESSES = {
   dex: 'cx7a90ed2f781876534cf1a04be34e4af026483de4',
   rebalancing: 'cx6d673012fbc854f6915f7a2ca34b404695336e9a',
   governance: 'cxdb3d3e2717d4896b336874015a4b23871e62fb6b',
-  band: 'cx03018fc77ee8862c25f1656161f8a6dbe53620d3',
+  band: 'cxeda795dcd69fe3d2e6c88a6473cdfe5532a3393e',
   router: 'cx2576925d931f3be8ff195914c10a87da2094c5e5',
   airdrip: '',
   sicx: 'cx2d013cb55781fb54b81d629aa4b611be2daec564',
