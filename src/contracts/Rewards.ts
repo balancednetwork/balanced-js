@@ -70,4 +70,67 @@ export default class Rewards extends Contract {
 
     return this.call(payload);
   }
+
+  getDistributionPercentages() {
+    const payload = this.paramsBuilder({
+      method: 'getDistributionPercentages'
+    });
+
+    return this.call(payload);
+  }
+
+  getSourceVoteData() {
+    const payload = this.paramsBuilder({
+      method: 'getSourceVoteData',
+    });
+
+    return this.call(payload);
+  }
+
+  getUserSlope(user: string, source: string) {
+    const payload = this.paramsBuilder({
+      method: `getUserSlope`,
+      params: {
+        user,
+        source,
+      }
+    });
+
+    return this.call(payload);
+  }
+
+  getLastUserVote(user: string, source: string) {
+    const payload = this.paramsBuilder({
+      method: `getLastUserVote`,
+      params: {
+        user,
+        source,
+      }
+    });
+
+    return this.call(payload);
+  }
+
+  getUserVoteData(user: string) {
+    const payload = this.paramsBuilder({
+      method: `getUserVoteData`,
+      params: {
+        user,
+      }
+    });
+
+    return this.call(payload);
+  }
+
+  voteForSource(name: string, userWeight: number) {
+    const payload = this.transactionParamsBuilder({
+      method: 'voteForSource',
+      params: {
+        name,
+        userWeight,
+      }
+    });
+
+    return this.callICONPlugins(payload);
+  }
 }
