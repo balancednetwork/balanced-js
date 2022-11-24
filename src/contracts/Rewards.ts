@@ -127,10 +127,21 @@ export default class Rewards extends Contract {
       method: 'voteForSource',
       params: {
         name,
-        userWeight,
+        userWeight: IconConverter.toHex(userWeight),
       }
     });
 
     return this.callICONPlugins(payload);
+  }
+
+  getWeightsSumPerType(type: number) {
+    const payload = this.paramsBuilder({
+      method: `getWeightsSumPerType`,
+      params: {
+        typeId: IconConverter.toHex(type),
+      }
+    });
+
+    return this.call(payload);
   }
 }
