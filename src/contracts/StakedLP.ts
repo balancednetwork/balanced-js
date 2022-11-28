@@ -44,4 +44,42 @@ export default class StakedLP extends Contract {
 
     return this.callICONPlugins(callParams);
   }
+
+  getDataSources() {
+    const payload = this.paramsBuilder({
+      method: 'getDataSources',
+    });
+
+    return this.call(payload);
+  }
+
+  getSourceName(sourceID: number) {
+    const payload = this.paramsBuilder({
+      method: 'getSourceName',
+      params: {
+        id: IconConverter.toHexNumber(sourceID)
+      }
+    });
+
+    return this.call(payload);
+  }
+
+  getSourceId(source: string) {
+    const payload = this.paramsBuilder({
+      method: 'getSourceId',
+      params: {
+        name: source
+      }
+    });
+
+    return this.call(payload);
+  }
+
+  getAllowedPoolIds() {
+    const payload = this.paramsBuilder({
+      method: 'getAllowedPoolIds',
+    });
+
+    return this.call(payload);
+  }
 }
