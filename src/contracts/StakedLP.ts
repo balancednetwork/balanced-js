@@ -10,9 +10,10 @@ export default class StakedLP extends Contract {
     this.address = addresses[this.nid].stakedLp;
   }
 
-  balanceOf(owner: string, poolId: number) {
+  balanceOf(owner: string, poolId: number, blockHeight?: number) {
     const callParams = this.paramsBuilder({
       method: 'balanceOf',
+      blockHeight: blockHeight,
       params: {
         _id: IconConverter.toHex(poolId),
         _owner: owner,
