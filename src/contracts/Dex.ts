@@ -46,9 +46,10 @@ export default class Dex extends Contract {
     return this.callICONPlugins(payload);
   }
 
-  balanceOf(owner: string, id: number) {
+  balanceOf(owner: string, id: number, blockHeight?: number) {
     const callParams = this.paramsBuilder({
       method: 'balanceOf',
+      blockHeight: blockHeight,
       params: {
         _owner: owner,
         _id: IconConverter.toHex(id),
@@ -101,9 +102,10 @@ export default class Dex extends Contract {
     return this.call(callParams);
   }
 
-  getPoolStats(id: number) {
+  getPoolStats(id: number, blockHeight?: number) {
     const callParams = this.paramsBuilder({
       method: 'getPoolStats',
+      blockHeight: blockHeight,
       params: {
         _id: IconConverter.toHex(id),
       },
