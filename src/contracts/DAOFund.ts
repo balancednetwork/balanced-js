@@ -15,4 +15,22 @@ export default class DAOFund extends Contract {
 
     return this.call(payload);
   }
+
+  getBalnEarnings(blockHeight?: number) {
+    const payload = this.paramsBuilder({
+      method: 'getBalnEarnings',
+      blockHeight: blockHeight,
+    });
+
+    return this.call(payload);
+  }
+
+  getFeeEarnings(blockHeight?: number) {
+    const payload = this.paramsBuilder({
+      method: 'getFeeEarnings',
+      blockHeight: blockHeight,
+    });
+
+    return this.call(payload);
+  }
 }
