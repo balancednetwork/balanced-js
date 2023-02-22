@@ -150,9 +150,10 @@ export default class Loans extends Contract {
     return this.call(callParams);
   }
 
-  getTotalCollateralDebt(collateral: string, asset: string) {
+  getTotalCollateralDebt(collateral: string, asset: string, blockHeight?: number) {
     const callParams = this.paramsBuilder({
       method: 'getTotalCollateralDebt',
+      blockHeight: blockHeight,
       params: {
         collateral: collateral,
         assetSymbol: asset,
