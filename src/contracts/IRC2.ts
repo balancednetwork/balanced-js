@@ -55,9 +55,10 @@ export default class IRC2 extends Contract {
     return this.transfer(addresses[this.nid].dex, value, JSON.stringify({ method: '_deposit' }));
   }
 
-  totalSupply() {
+  totalSupply(blockHeight?: number) {
     const callParams = this.paramsBuilder({
       method: 'totalSupply',
+      blockHeight: blockHeight,
     });
 
     return this.call(callParams);
