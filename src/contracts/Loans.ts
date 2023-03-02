@@ -170,4 +170,16 @@ export default class Loans extends Contract {
 
     return this.call(callParams);
   }
+
+  getBorrowerCount(collateralAddress: string, blockHeight?: number) {
+    const callParams = this.paramsBuilder({
+      method: 'borrowerCount',
+      blockHeight,
+      params: {
+        collateralAddress
+      }
+    });
+
+    return this.call(callParams);
+  }
 }
