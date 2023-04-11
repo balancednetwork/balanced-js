@@ -83,7 +83,7 @@ export default class Governance extends Contract {
     return this.call(callParams);
   }
 
-  defineVote(name: string, description: string, vote_start: number, duration: number, forumLink: string, actions: string) {
+  defineVote(name: string, description: string, vote_start: number, duration: number, forumLink: string, transactions?: string) {
     const callParams = this.transactionParamsBuilder({
       method: 'defineVote',
       params: {
@@ -92,9 +92,10 @@ export default class Governance extends Contract {
         vote_start: IconConverter.toHex(vote_start),
         duration: IconConverter.toHex(duration),
         forumLink: forumLink,
-        actions: actions,
+        transactions: transactions ?? null
       },
     });
+
     return this.callICONPlugins(callParams);
   }
 
@@ -104,5 +105,16 @@ export default class Governance extends Contract {
     })
 
     return this.call(callParams);
+  }
+
+  tryExecuteTransactions(transactions: string) {
+    const callParams = this.transactionParamsBuilder({
+      method: 'tryExecuteTransactions',
+      params: {
+        transactions
+      }
+    });
+
+    return this.callICONPlugins(callParams);
   }
 }
