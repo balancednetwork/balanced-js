@@ -83,4 +83,15 @@ export default class StakedLP extends Contract {
 
     return this.call(payload);
   }
+
+  totalStaked(id: number) {
+    const payload = this.paramsBuilder({
+      method: 'totalStaked',
+      params: {
+        _id: IconConverter.toHex(id),
+      }
+    });
+
+    return this.call(payload);
+  }
 }
