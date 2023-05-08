@@ -24,6 +24,7 @@ const MAINNET_ADDRESSES = {
   balancedOracle: 'cx133c6015bb29f692b12e71c1792fddf8f7014652',
   bbaln: 'cxe0252e6c1fe4040412811d83d13979e335287e45',
   feeHandler: 'cx5faae53c4dbd1fbe4a2eb4aab6565030f10da5c6',
+  bribe: 'cx28497aef34ec44ad2be9249daddfbe34b54f309a',
 };
 
 const YEOUIDO_ADDRESSES = {
@@ -50,6 +51,7 @@ const YEOUIDO_ADDRESSES = {
   balancedOracle: '',
   bbaln: '',
   feeHandler: '',
+  bribe: '',
 };
 
 const SEJONG_ADDRESSES = {
@@ -76,6 +78,7 @@ const SEJONG_ADDRESSES = {
   balancedOracle: '',
   bbaln: '',
   feeHandler: '',
+  bribe: '',
 };
 
 const BERLIN_ADDRESSES = {
@@ -102,6 +105,7 @@ const BERLIN_ADDRESSES = {
   balancedOracle: 'cx5c244805b38c3f71d494cbcfd25f87c201d81629',
   bbaln: 'cx63d5d4a710d83afa29fa15e528fb5379638e848f',
   feeHandler: 'cx5dfdc2de98f028c1fc5bf8af5110ff5a7b0a6db6',
+  bribe: '',
 };
 
 const LISBON_ADDRESSES = {
@@ -128,6 +132,7 @@ const LISBON_ADDRESSES = {
   balancedOracle: 'cxeda795dcd69fe3d2e6c88a6473cdfe5532a3393e',
   bbaln: 'cxb0cafb790fb312e40d8c5ac88e15b15d46aad222',
   feeHandler: 'cxf19dfddfb2050a2424a8f9a799255c09271b5e08',
+  bribe: 'cxb40b43813ca8bb47ceb3d589084033f4e1aec1c8',
 };
 
 const addresses = {
