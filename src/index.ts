@@ -29,6 +29,7 @@ import StakedLP from './contracts/StakedLP';
 import BalancedOracle from './contracts/BalancedOracle';
 import BBALN from './contracts/BBALN';
 import FeeHandler from './contracts/FeeHandler';
+import Bribe from './contracts/Bribe';
 
 export * from './contractSettings';
 export { default as addresses } from './addresses';
@@ -80,6 +81,7 @@ export class BalancedJs {
   BalancedOracle: BalancedOracle;
   BBALN: BBALN;
   FeeHandler: FeeHandler;
+  Bribe: Bribe;
 
   static utils = {
     toLoop(value: BigNumber | number | string, currencyKey?: string): BigNumber {
@@ -146,6 +148,7 @@ export class BalancedJs {
     this.BalancedOracle = new BalancedOracle(this.contractSettings);
     this.BBALN = new BBALN(this.contractSettings);
     this.FeeHandler = new FeeHandler(this.contractSettings);
+    this.Bribe = new Bribe(this.contractSettings);
   }
 
   inject({ account, legerSettings }: SettingInjection) {
