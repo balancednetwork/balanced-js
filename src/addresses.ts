@@ -25,6 +25,8 @@ const MAINNET_ADDRESSES = {
   bbaln: 'cxe0252e6c1fe4040412811d83d13979e335287e45',
   feeHandler: 'cx5faae53c4dbd1fbe4a2eb4aab6565030f10da5c6',
   bribe: 'cx28497aef34ec44ad2be9249daddfbe34b54f309a',
+  assetManager: '',
+  xCall: '',
 };
 
 const YEOUIDO_ADDRESSES = {
@@ -52,6 +54,8 @@ const YEOUIDO_ADDRESSES = {
   bbaln: '',
   feeHandler: '',
   bribe: '',
+  assetManager: '',
+  xCall: '',
 };
 
 const SEJONG_ADDRESSES = {
@@ -79,33 +83,37 @@ const SEJONG_ADDRESSES = {
   bbaln: '',
   feeHandler: '',
   bribe: '',
+  assetManager: '',
+  xCall: '',
 };
 
 const BERLIN_ADDRESSES = {
-  loans: 'cx7937a64b32be882dafc83d42078668d31fa5920f',
-  staking: 'cx506d21dbcf8b180560e7f8ba104c18983696bd55',
-  dividends: 'cx238de0dea868ea6d82fac78802705ac0338b753a',
-  reserve: 'cx7fc7a4c631329f1959de0070c81e9477eb465d19',
-  daofund: 'cx6990b9e2febc4a17b954e8b10caef1b9464c34f4',
-  rewards: 'cx46aff4379970ffeb5d5889e59fb306cc41a4e75a',
-  dex: 'cx4d3b86709c387dec2927158c0377ecabe002f503',
-  rebalancing: 'cx1d9b9f4892d15d84328b94f036916c7abff445b9',
-  governance: 'cxf42e1bc5d514d988818c8d17a8a7597bebe4b025',
-  band: 'cx18f2bc4510f827b0aa9acfe5298d039271e0bb73',
-  router: 'cx00fe628e3a1a8d59c0a5aacf476d96c9e4917f9a',
+  loans: 'cx501cce20fc5d5a0e322d5a600a9903f3f4832d43',
+  staking: 'cxe41e5f42b982eb88f80381ae776d1aac09b74885',
+  dividends: 'cxaa5119be1f73806015cd83dbd8c3fb0c0ac409de',
+  reserve: 'cxb79b3fac6c9dcc014cb434be46edeb9ae8cf9640',
+  daofund: 'cx6089e7ec850154c7d0d987d4020e242881de4fd1',
+  rewards: 'cxe6a949af5f13ef58cf5657fa5c8d4cc28cb790c7',
+  dex: 'cx9044771dad80611ee747ffce21949dc3f33f0948',
+  rebalancing: 'cxa1d59c77d22b0fd550ebe3c0fb123e86fd888b05',
+  governance: 'cx421d370f8f5bbff7b1d52604955c6fa6164095b4',
+  band: 'cx80752674c216c209264abc331cd08e1a64eb7c57',
+  router: 'cxfcfb55f5b9c066b107c4a16cb2ea3d9c7ca97f30',
   airdrip: '',
-  sicx: 'cxdd89d7a425b8f0b6448a8c80136727c517e64033',
-  bnusd: 'cx1cd2da25f9942fda5144e139bbda3e5108d3c083',
-  baln: 'cx9eefbe346b17328e2265573f6e166f6bc4a13cc4',
-  bwt: 'cxb81776403a0d66343b168eb2cbf56db967aa97f3',
-  multicall: 'cx94a9a5750182d117a82a866e78ce7c75856c1edb',
+  sicx: 'cxb7d63658e3375f701af9d420ea351d0736760634',
+  bnusd: 'cxd06f80e28e989a67e297799ab1fb501cdddc2b4d',
+  baln: 'cx026a11686efc8f52243415adb217ec9a1bc50433',
+  bwt: 'cx7186c15188051e43dc16bdc7c3e2588443df6772',
+  multicall: 'cxf7abc88ad52e21e8463ecb2070465eddbe31309c',
   disbursement: 'cxda35146882308a6bb26519738ffef85bb8d7535e',
-  stabilityfund: 'cx0d086972db4f23274e80cf19583a76b778216ae4',
-  stakedLp: 'cx8ac7b22d1eea06bffb3786a7d4ce7c0c8ea9e525',
-  balancedOracle: 'cx5c244805b38c3f71d494cbcfd25f87c201d81629',
-  bbaln: 'cx63d5d4a710d83afa29fa15e528fb5379638e848f',
-  feeHandler: 'cx5dfdc2de98f028c1fc5bf8af5110ff5a7b0a6db6',
+  stabilityfund: 'cx71e3b1b52b9feb2fe96f99b02b4b32cc86879490',
+  stakedLp: 'cxf685f3cfebbeedece3d0b846fe2a670aca932737',
+  balancedOracle: 'cx2dc21a1b7f602d49bfe64a49970fe02153ddf487',
+  bbaln: 'cx1d4041551759c48f5679e535ba9b83e4669ba6e9',
+  feeHandler: 'cx2ed63dab73494be7814c1b0d47044656d493a77d',
   bribe: '',
+  assetManager: 'cx957ee1fe04ced630f8e5d78ca74610cd55fc419d',
+  xCall: 'cxc03ff5cbe2e0927774f5b0b9e73f331840cc0b8b',
 };
 
 const LISBON_ADDRESSES = {
@@ -133,6 +141,8 @@ const LISBON_ADDRESSES = {
   bbaln: 'cxb0cafb790fb312e40d8c5ac88e15b15d46aad222',
   feeHandler: 'cxf19dfddfb2050a2424a8f9a799255c09271b5e08',
   bribe: 'cxb40b43813ca8bb47ceb3d589084033f4e1aec1c8',
+  assetManager: '',
+  xCall: '',
 };
 
 const addresses = {

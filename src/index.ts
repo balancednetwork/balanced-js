@@ -30,6 +30,7 @@ import BalancedOracle from './contracts/BalancedOracle';
 import BBALN from './contracts/BBALN';
 import FeeHandler from './contracts/FeeHandler';
 import Bribe from './contracts/Bribe';
+import XCall from './contracts/XCall';
 
 export * from './contractSettings';
 export { default as addresses } from './addresses';
@@ -82,6 +83,7 @@ export class BalancedJs {
   BBALN: BBALN;
   FeeHandler: FeeHandler;
   Bribe: Bribe;
+  XCall: XCall;
 
   static utils = {
     toLoop(value: BigNumber | number | string, currencyKey?: string): BigNumber {
@@ -149,6 +151,7 @@ export class BalancedJs {
     this.BBALN = new BBALN(this.contractSettings);
     this.FeeHandler = new FeeHandler(this.contractSettings);
     this.Bribe = new Bribe(this.contractSettings);
+    this.XCall = new XCall(this.contractSettings);
   }
 
   inject({ account, legerSettings }: SettingInjection) {
