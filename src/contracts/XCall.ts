@@ -63,11 +63,12 @@ export default class XCall extends Contract {
     return this.callICONPlugins(payload);
   }
 
-  executeCall(_reqId: number) {
+  executeCall(_reqId: string, _data: string) {
     const payload = this.transactionParamsBuilder({
       method: 'executeCall',
       params: {
-        _reqId
+        _reqId,
+        _data
       },
     });
 

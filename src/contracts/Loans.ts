@@ -182,4 +182,34 @@ export default class Loans extends Contract {
 
     return this.call(callParams);
   }
+
+  getCurrentFloor(tokenAddress: string, blockHeight?: number) {
+    const callParams = this.paramsBuilder({
+      method: 'getCurrentFloor',
+      blockHeight,
+      params: {
+        tokenAddress
+      }
+    });
+
+    return this.call(callParams);
+  }
+
+  getFloorPercentage(blockHeight?: number) {
+    const callParams = this.paramsBuilder({
+      method: 'getFloorPercentage',
+      blockHeight
+    });
+
+    return this.call(callParams);
+  }
+
+  getTimeDelayMicroSeconds(blockHeight?: number) {
+    const callParams = this.paramsBuilder({
+      method: 'getTimeDelayMicroSeconds',
+      blockHeight
+    });
+
+    return this.call(callParams);
+  }
 }
