@@ -113,7 +113,7 @@ const BERLIN_ADDRESSES = {
   feeHandler: 'cx2ed63dab73494be7814c1b0d47044656d493a77d',
   bribe: '',
   assetManager: 'cx957ee1fe04ced630f8e5d78ca74610cd55fc419d',
-  xCall: 'cxc03ff5cbe2e0927774f5b0b9e73f331840cc0b8b',
+  xCall: 'cx5b0bd4bb62e2b511aa29586c1e8a21749425d474',
 };
 
 const LISBON_ADDRESSES = {
