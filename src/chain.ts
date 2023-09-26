@@ -51,7 +51,8 @@ export const CHAIN_INFO: { readonly [chainId: number]: ChainInfo } = {
   [SupportedChainId.BERLIN]: {
     name: 'Berlin',
     node: 'https://berlin.net.solidwallet.io',
-    APIEndpoint: 'https://berlin.net.solidwallet.io/api/v3',
+    // APIEndpoint: 'https://berlin.net.solidwallet.io/api/v3',
+    APIEndpoint: 'https://api.berlin.icon.community/api/v3',
     debugAPIEndpoint: 'https://berlin.net.solidwallet.io/api/v3d',
     chainId: 7,
     tracker: 'https://tracker.berlin.icon.community',
