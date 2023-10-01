@@ -64,7 +64,7 @@ export default class IRC2 extends Contract {
     return this.call(callParams);
   }
 
-  swapUsingRoute(value: string, outputAddress: string, minimumReceive: string, path: (string | null)[]) {
+  swapUsingRoute(value: string, outputAddress: string, minimumReceive: string, path: (string | null)[], receiver?: string) {
     const data = {
       method: '_swap',
       params: {
@@ -72,6 +72,7 @@ export default class IRC2 extends Contract {
         // this should be decimal
         minimumReceive: minimumReceive,
         path: path,
+        ...(receiver && { receiver: receiver })
       },
     };
 
