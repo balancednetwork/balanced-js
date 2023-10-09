@@ -31,6 +31,7 @@ import BBALN from './contracts/BBALN';
 import FeeHandler from './contracts/FeeHandler';
 import Bribe from './contracts/Bribe';
 import XCall from './contracts/XCall';
+import AssetManager from './contracts/AssetManager';
 
 export * from './contractSettings';
 export { default as addresses } from './addresses';
@@ -84,6 +85,7 @@ export class BalancedJs {
   FeeHandler: FeeHandler;
   Bribe: Bribe;
   XCall: XCall;
+  AssetManager: AssetManager;
 
   static utils = {
     toLoop(value: BigNumber | number | string, currencyKey?: string): BigNumber {
@@ -152,6 +154,7 @@ export class BalancedJs {
     this.FeeHandler = new FeeHandler(this.contractSettings);
     this.Bribe = new Bribe(this.contractSettings);
     this.XCall = new XCall(this.contractSettings);
+    this.AssetManager = new AssetManager(this.contractSettings);
   }
 
   inject({ account, legerSettings }: SettingInjection) {
