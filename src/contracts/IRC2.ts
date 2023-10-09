@@ -91,4 +91,17 @@ export default class IRC2 extends Contract {
 
     return this.callICONPlugins(callParams);
   }
+  
+  crossTransfer(_to: string, _value: string, fee: string) {
+    const payload = this.transactionParamsBuilder({
+      method: 'crossTransfer',
+      value: IconConverter.toHexNumber(fee),
+      params: {
+        _to,
+        _value: IconConverter.toHexNumber(_value),
+      }
+    });
+
+    return this.callICONPlugins(payload);
+  }
 }
