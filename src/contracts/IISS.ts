@@ -22,4 +22,12 @@ export default class IISS extends Contract {
 
     return this.call(callParams);
   }
+
+  getNetworkInfo() {
+    const callParams = this.paramsBuilder({
+      method: 'getNetworkInfo',
+    });
+
+    return this.call(callParams);
+  }
 }
