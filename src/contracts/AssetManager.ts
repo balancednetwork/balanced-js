@@ -23,4 +23,18 @@ export default class AssetManager extends Contract {
 
     return this.callICONPlugins(payload);
   }
+
+  withdrawNativeTo(amount: string, asset: string, to: string, fee: string) {
+    const payload = this.transactionParamsBuilder({
+      method: 'withdrawNativeTo',
+      value: IconConverter.toHexNumber(fee),
+      params: {
+        amount: IconConverter.toHexNumber(amount),
+        asset,
+        to,
+      },
+    });
+
+    return this.callICONPlugins(payload);
+  }
 }
