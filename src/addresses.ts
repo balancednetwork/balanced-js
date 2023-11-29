@@ -25,9 +25,9 @@ const MAINNET_ADDRESSES = {
   bbaln: 'cxe0252e6c1fe4040412811d83d13979e335287e45',
   feeHandler: 'cx5faae53c4dbd1fbe4a2eb4aab6565030f10da5c6',
   bribe: 'cx28497aef34ec44ad2be9249daddfbe34b54f309a',
-  assetManager: '',
-  xCall: '',
-  xCallManager: ''
+  assetManager: 'cxabea09a8c5f3efa54d0a0370b14715e6f2270591',
+  xCall: 'cxa07f426062a1384bdd762afa6a87d123fbc81c75',
+  xCallManager: 'cx227f747ab644a1f453a0708a55fe6155b9e0abbb'
 };
 
 const YEOUIDO_ADDRESSES = {
