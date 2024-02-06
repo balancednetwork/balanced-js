@@ -212,4 +212,15 @@ export default class Loans extends Contract {
 
     return this.call(callParams);
   }
+  
+  getInterestRate(symbol: string) {
+    const callParams = this.paramsBuilder({
+      method: 'getInterestRate',
+      params: {
+        symbol,
+      },
+    })
+
+    return this.call(callParams);
+  }
 }

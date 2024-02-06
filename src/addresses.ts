@@ -27,7 +27,8 @@ const MAINNET_ADDRESSES = {
   bribe: 'cx28497aef34ec44ad2be9249daddfbe34b54f309a',
   assetManager: 'cxabea09a8c5f3efa54d0a0370b14715e6f2270591',
   xCall: 'cxa07f426062a1384bdd762afa6a87d123fbc81c75',
-  xCallManager: 'cx227f747ab644a1f453a0708a55fe6155b9e0abbb'
+  xCallManager: 'cx227f747ab644a1f453a0708a55fe6155b9e0abbb',
+  savings: ''
 };
 
 const YEOUIDO_ADDRESSES = {
@@ -57,7 +58,8 @@ const YEOUIDO_ADDRESSES = {
   bribe: '',
   assetManager: '',
   xCall: '',
-  xCallManager: ''
+  xCallManager: '',
+  savings: ''
 };
 
 const SEJONG_ADDRESSES = {
@@ -87,7 +89,8 @@ const SEJONG_ADDRESSES = {
   bribe: '',
   assetManager: '',
   xCall: '',
-  xCallManager: ''
+  xCallManager: '',
+  savings: ''
 };
 
 const BERLIN_ADDRESSES = {
@@ -117,7 +120,8 @@ const BERLIN_ADDRESSES = {
   bribe: '',
   assetManager: 'cx957ee1fe04ced630f8e5d78ca74610cd55fc419d',
   xCall: 'cx5b0bd4bb62e2b511aa29586c1e8a21749425d474',
-  xCallManager: ''
+  xCallManager: '',
+  savings: ''
 };
 
 const LISBON_ADDRESSES = {
@@ -147,7 +151,8 @@ const LISBON_ADDRESSES = {
   bribe: 'cxb40b43813ca8bb47ceb3d589084033f4e1aec1c8',
   assetManager: 'cxe9d69372f6233673a6ebe07862e12af4c2dca632',
   xCall: 'cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83',
-  xCallManager: 'cx5040180f7b0cd742658cb9050a289eca03083b70'
+  xCallManager: 'cx5040180f7b0cd742658cb9050a289eca03083b70',
+  savings: 'cxf57a458a09bf8796024ecaad7ac6ac3987ed68d4'
 };
 
 const addresses = {
