@@ -51,4 +51,15 @@ export default class Savings extends Contract {
 
     return this.callICONPlugins(payload);
   }
+
+  getTotalPayout(token: string) {
+    const payload = this.paramsBuilder({
+      method: 'getTotalPayout',
+      params: {
+        token
+      }
+    });
+
+    return this.call(payload);
+  }
 }
