@@ -52,9 +52,10 @@ export default class Savings extends Contract {
     return this.callICONPlugins(payload);
   }
 
-  getTotalPayout(token: string) {
+  getTotalPayout(token: string, blockHeight?: number) {
     const payload = this.paramsBuilder({
       method: 'getTotalPayout',
+      blockHeight: blockHeight,
       params: {
         token
       }
