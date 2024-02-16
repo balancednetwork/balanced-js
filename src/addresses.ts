@@ -28,7 +28,7 @@ const MAINNET_ADDRESSES = {
   assetManager: 'cxabea09a8c5f3efa54d0a0370b14715e6f2270591',
   xCall: 'cxa07f426062a1384bdd762afa6a87d123fbc81c75',
   xCallManager: 'cx227f747ab644a1f453a0708a55fe6155b9e0abbb',
-  savings: ''
+  savings: 'cxd82fb5d3effecd8c9071a4bba3856ad7222c4b91'
 };
 
 const YEOUIDO_ADDRESSES = {
