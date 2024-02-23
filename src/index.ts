@@ -33,6 +33,7 @@ import Bribe from './contracts/Bribe';
 import XCall from './contracts/XCall';
 import AssetManager from './contracts/AssetManager';
 import Savings from './contracts/Savings';
+import Trickler from './contracts/Trickler';
 
 export * from './contractSettings';
 export { default as addresses } from './addresses';
@@ -88,6 +89,7 @@ export class BalancedJs {
   XCall: XCall;
   AssetManager: AssetManager;
   Savings: Savings;
+  Trickler: Trickler;
 
   static utils = {
     toLoop(value: BigNumber | number | string, currencyKey?: string): BigNumber {
@@ -158,6 +160,7 @@ export class BalancedJs {
     this.XCall = new XCall(this.contractSettings);
     this.AssetManager = new AssetManager(this.contractSettings);
     this.Savings = new Savings(this.contractSettings);
+    this.Trickler = new Trickler(this.contractSettings);
   }
 
   inject({ account, legerSettings }: SettingInjection) {

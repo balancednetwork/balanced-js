@@ -28,7 +28,8 @@ const MAINNET_ADDRESSES = {
   assetManager: 'cxabea09a8c5f3efa54d0a0370b14715e6f2270591',
   xCall: 'cxa07f426062a1384bdd762afa6a87d123fbc81c75',
   xCallManager: 'cx227f747ab644a1f453a0708a55fe6155b9e0abbb',
-  savings: 'cxd82fb5d3effecd8c9071a4bba3856ad7222c4b91'
+  savings: 'cxd82fb5d3effecd8c9071a4bba3856ad7222c4b91',
+  trickler: 'cx9345f80d6c98357ccbb70392b14162199c2c5f66'
 };
 
 const YEOUIDO_ADDRESSES = {
@@ -59,7 +60,8 @@ const YEOUIDO_ADDRESSES = {
   assetManager: '',
   xCall: '',
   xCallManager: '',
-  savings: ''
+  savings: '',
+  trickler: ''
 };
 
 const SEJONG_ADDRESSES = {
@@ -90,7 +92,8 @@ const SEJONG_ADDRESSES = {
   assetManager: '',
   xCall: '',
   xCallManager: '',
-  savings: ''
+  savings: '',
+  trickler: ''
 };
 
 const BERLIN_ADDRESSES = {
@@ -121,7 +124,8 @@ const BERLIN_ADDRESSES = {
   assetManager: 'cx957ee1fe04ced630f8e5d78ca74610cd55fc419d',
   xCall: 'cx5b0bd4bb62e2b511aa29586c1e8a21749425d474',
   xCallManager: '',
-  savings: ''
+  savings: '',
+  trickler: ''
 };
 
 const LISBON_ADDRESSES = {
@@ -152,7 +156,8 @@ const LISBON_ADDRESSES = {
   assetManager: 'cxe9d69372f6233673a6ebe07862e12af4c2dca632',
   xCall: 'cx15a339fa60bd86225050b22ea8cd4a9d7cd8bb83',
   xCallManager: 'cx5040180f7b0cd742658cb9050a289eca03083b70',
-  savings: 'cxf57a458a09bf8796024ecaad7ac6ac3987ed68d4'
+  savings: 'cxf57a458a09bf8796024ecaad7ac6ac3987ed68d4',
+  trickler: 'cx223bb0520fb6ac4faca4a59d4cca77fbe3ebe3c1'
 };
 
 const addresses = {
