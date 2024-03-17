@@ -35,7 +35,7 @@ import AssetManager from './contracts/AssetManager';
 import Savings from './contracts/Savings';
 import Trickler from './contracts/Trickler';
 import NOL from './contracts/NOL';
-import ICXBurner from 'contracts/ICXBurner';
+import ICXBurner from './contracts/ICXBurner';
 
 export * from './contractSettings';
 export { default as addresses } from './addresses';
