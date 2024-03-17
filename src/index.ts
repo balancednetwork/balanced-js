@@ -34,6 +34,7 @@ import XCall from './contracts/XCall';
 import AssetManager from './contracts/AssetManager';
 import Savings from './contracts/Savings';
 import Trickler from './contracts/Trickler';
+import NOL from './contracts/NOL';
 
 export * from './contractSettings';
 export { default as addresses } from './addresses';
@@ -90,6 +91,7 @@ export class BalancedJs {
   AssetManager: AssetManager;
   Savings: Savings;
   Trickler: Trickler;
+  NOL: NOL;
 
   static utils = {
     toLoop(value: BigNumber | number | string, currencyKey?: string): BigNumber {
@@ -161,6 +163,7 @@ export class BalancedJs {
     this.AssetManager = new AssetManager(this.contractSettings);
     this.Savings = new Savings(this.contractSettings);
     this.Trickler = new Trickler(this.contractSettings);
+    this.NOL = new NOL(this.contractSettings);
   }
 
   inject({ account, legerSettings }: SettingInjection) {
