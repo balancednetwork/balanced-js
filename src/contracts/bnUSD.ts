@@ -26,4 +26,12 @@ export default class bnUSD extends IRC2 {
 
     return this.callICONPlugins(payload);
   }
+
+  getDebtCeiling() {
+    const callParams = this.paramsBuilder({
+      method: 'getDebtCeiling',
+    });
+
+    return this.call(callParams);
+  }
 }
